@@ -1,10 +1,14 @@
 Spring boot + myBatis + phoenix 访问 hbase数据库
 
 #compile
+
+
 mvn clean
 mvn package
 
 #run 
+
+
 java -jar springboot-mybatis-phoenix-demo-1.0.jar
 
 #check
