@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.AllBizDao">
+    <resultMap type="com.example.demo.AllBiz" id="AllBiz">
+         <id column="SERVICEID" property="serviceid"/>
+         <id column="UPDATE_TIME" property="updateTime"/>
+         <result column="MIN_TIME" property="minTime" />
+         <result column="MAX_TIME" property="maxTime" />
+         <result column="AVG_TIME" property="avgTime" />
+         <result column="TOTAL_NUMS" property="totalNums"/>
+         <result column="BIZ_TIME" property="bizTime" />
+    </resultMap>
+    <select id="getAll" resultMap="AllBiz">
+        select * from KDAP.ALL_BIZ
+    </select>
+</mapper>
